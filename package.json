@@ -3,7 +3,10 @@
   "version": "0.1.0-alpha",
   "description": "Ember-shell Application. Manages application execution and lifecycles",
   "keywords": [
-    "ember-addon"
+    "ember-addon",
+    "ember-shell",
+    "ember-engines",
+    "ember-shell-app"
   ],
   "license": "MIT",
   "author": "",
