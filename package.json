@@ -1,6 +1,6 @@
 {
   "name": "esh-task-manager",
-  "version": "0.1.0-alpha",
+  "version": "0.2.0-alpha",
   "description": "Ember-shell Application. Manages application execution and lifecycles",
   "keywords": [
     "ember-addon",
@@ -8,19 +8,24 @@
     "ember-engines",
     "ember-shell-app"
   ],
+  "author": "Marcelo Mira",
   "license": "MIT",
-  "author": "",
+  "homepage": "http://ember-shell.com/",
   "directories": {
     "doc": "doc",
     "test": "tests"
   },
-  "repository": "",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ember-shell/esh-task-manager.git"
+  },
   "scripts": {
     "build": "ember build",
     "start": "ember server",
     "test": "ember try:each"
   },
   "dependencies": {
+    "ember-shell-adk": "^0.3.0-alpha",
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.1.1"
   },
@@ -44,13 +49,12 @@
     "ember-export-application-global": "^1.0.5",
     "ember-load-initializers": "^0.6.0",
     "ember-resolver": "^2.0.3",
+    "ember-engines": "git+https://github.com/ember-engines/ember-engines.git",
     "ember-source": "^2.11.0-beta.2",
-    "ember-welcome-page": "^2.0.2",
     "loader.js": "^4.0.10"
   },
   "peerDependency": {
-    "ember-shell": "^0.2.0-alpha",
-    "ember-engines": "0.4.0"
+    "ember-engines": "^0.4.0"
   },
   "engines": {
     "node": ">= 0.12.0"

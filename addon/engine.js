@@ -7,7 +7,13 @@ const { modulePrefix } = config;
 
 const Eng = Engine.extend({
   modulePrefix,
-  Resolver
+  Resolver,
+  title: "Task Manager",
+  dependencies: {
+    services: [
+      'shell-manager',
+    ]
+  }
 });
 
 loadInitializers(Eng, modulePrefix);
