@@ -1,117 +1,55 @@
-esh-task-manager > app-container {
+esh-task-manager > app-main {
   width: 100%;
   height: 100%;
 }
 
-esh-task-manager .tg {
+esh-task-manager table {
+  position: relative;
+  color: var(--esh-gray-darker);
+  font-size: 14px;
   border-collapse: collapse;
   border-spacing: 0;
   width: 100%;
 }
 
-esh-task-manager .tg td {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  padding: 10px 5px;
-  border-style: solid;
-  border-width: 1px;
-  overflow: hidden;
-  word-break: normal;
-  border-color: #aabcfe;
-  color: #669;
-  background-color: #e8edff;
+esh-task-manager table tbody tr {
+  border-bottom: 1px solid var(--esh-grey-lighter);
 }
 
-esh-task-manager .tg th {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  padding: 10px 5px;
-  border-style: solid;
-  border-width: 1px;
-  overflow: hidden;
-  word-break: normal;
-  border-bottom-color: #aabcfe;
-  color: #039;
-  background-color: #b9c9fe;
+esh-task-manager table tbody td {
+  padding: 10px;
+  background-color: #FFF;
+  text-align: left;
+  vertical-align: middle;
 }
 
-esh-task-manager .tg .tg-baqh {
+esh-task-manager table tbody td ui-icon {
+  display: block;
+}
+
+esh-task-manager table tbody td.flex-box {
+  height: 28px;
+}
+
+esh-task-manager table tbody td.td-center,
+esh-task-manager table thead th.th-center {
   text-align: center;
-  vertical-align: top
 }
 
-esh-task-manager .tg td {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  padding: 10px 5px;
-  border-style: solid;
-  border-width: 0px;
-  overflow: hidden;
-  word-break: normal;
-  border-color: #ccc;
-  color: #333;
-  background-color: #fff;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+esh-task-manager table tbody td.td-icon ui-icon {
+  margin-bottom: -1px;
 }
 
-esh-task-manager .tg th {
-  font-family: Arial, sans-serif;
-  font-size: 14px;
-  font-weight: normal;
-  padding: 10px 5px;
-  border-style: solid;
-  border-width: 0px;
-  overflow: hidden;
-  word-break: normal;
-  border-color: #ccc;
-  color: #333;
-  background-color: #f0f0f0;
-  border-top-width: 1px;
-  border-bottom-width: 1px;
+esh-task-manager table th {
+  padding: 10px;
+  background-color: #F0F0F0;
+  text-align: left;
+  vertical-align: middle;
+  font-weight: lighter;
 }
 
-esh-task-manager .tg .tg-yw4l {
-  vertical-align: top
-}
-
-esh-task-manager th.tg-sort-header::-moz-selection {
-  background: transparent;
-}
-
-esh-task-manager th.tg-sort-header::selection {
-  background: transparent;
-}
-
-esh-task-manager th.tg-sort-header {
-  cursor: pointer;
-}
-
-esh-task-manager table th.tg-sort-header:after {
-  content: '';
-  float: right;
-  margin-top: 7px;
-  border-width: 0 4px 4px;
-  border-style: solid;
-  border-color: #404040 transparent;
-  visibility: hidden;
-}
-
-esh-task-manager table th.tg-sort-header:hover:after {
-  visibility: visible;
-}
-
-esh-task-manager table th.tg-sort-desc:after,
-esh-task-manager table th.tg-sort-asc:after,
-esh-task-manager table th.tg-sort-asc:hover:after {
-  visibility: visible;
-  opacity: 0.4;
-}
-
-esh-task-manager table th.tg-sort-desc:after {
-  border-bottom: none;
-  border-width: 4px 4px 0;
+esh-task-manager table thead tr {
+  border-bottom: 1px solid var(--esh-grey-lighter);
 }
 
 esh-task-manager > status-bar {
@@ -138,13 +76,13 @@ esh-task-manager > status-bar > button {
 }
 
 @media screen and (max-width: 767px) {
-  esh-task-manager .tg {
+  esh-task-manager table {
     width: auto !important;
   }
-  esh-task-manager .tg col {
+  esh-task-manager table col {
     width: auto !important;
   }
-  esh-task-manager .tg-wrap {
+  esh-task-manager > app-main {
     overflow-x: auto;
     -webkit-overflow-scrolling: touch;
     margin: auto 0px;

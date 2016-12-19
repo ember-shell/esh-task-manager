@@ -1,6 +1,6 @@
 {
   "name": "esh-task-manager",
-  "version": "0.2.0-alpha",
+  "version": "0.4.0-alpha",
   "description": "Ember-shell Application. Manages application execution and lifecycles",
   "keywords": [
     "ember-addon",
@@ -25,7 +25,7 @@
     "test": "ember try:each"
   },
   "dependencies": {
-    "ember-shell-adk": "^0.3.0-alpha",
+    "ember-shell-adk": "^0.4.0-alpha",
     "ember-cli-babel": "^5.1.7",
     "ember-cli-htmlbars": "^1.1.1"
   },
@@ -54,7 +54,7 @@
     "loader.js": "^4.0.10"
   },
   "peerDependency": {
-    "ember-engines": "^0.4.0"
+    "ember-engines": "^0.5.0"
   },
   "engines": {
     "node": ">= 0.12.0"

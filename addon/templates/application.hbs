@@ -1,12 +1,10 @@
-{{#-in-element applicationElement}}
+{{#-in-element applicationRoot}}
 
-  {{shell/window/title-bar application}}
+  {{shell/window/title-bar}}
 
-  {{#shell/app-main application}}
-    {{outlet}}
-  {{/shell/app-main}}
+  {{shell/app-main}}
 
-  {{#shell/window/status-bar application}}
+  {{#shell/window/status-bar}}
     {{input value=execAppName}}<button {{action 'startApp' execAppName}}>Execute!</button>
   {{/shell/window/status-bar}}
 

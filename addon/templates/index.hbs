@@ -1,22 +1,24 @@
-<div class="flex-box flex-one esh-app-container">
-  <div class="tg-wrap flex-box flex-one">
-    <table id="tg-VYONW" class="tg">
-      <thead>
-        <tr>
-          <th class="tg-baqh">PID</th>
-          <th class="tg-baqh">Name</th>
-          <th class="tg-baqh">State</th>
-          <th class="tg-baqh">Memory</th>
-        </tr>
-      </thead>
-      {{#each manager.apps as |app|}}
-        <tr>
-          <th class="tg-yw4l">{{app.pid}}</th>
-          <th class="tg-yw4l">{{app.name}}</th>
-          <th class="tg-yw4l">{{app.state}}</th>
-          <th class="tg-yw4l">{{app.memory}}</th>
-        </tr>
-      {{/each}}
-    </table>
-  </div>
-</div>
+<table>
+  <thead>
+    <tr>
+      <th></th>
+      <th>Name</th>
+      <th class="th-center">State</th>
+      <th class="th-center">PID</th>
+      <th class="th-center">Actions</th>
+    </tr>
+  </thead>
+  <tbody>
+    {{#each manager.apps as |app|}}
+      <tr>
+        <td class="td-icon flex-box flex-center-center">{{shell/ui-icon iconSize="16" iconUrl=app.icon}}</td>
+        <td>{{app.name}}</td>
+        <td class="td-center">{{app.state}}</td>
+        <td class="td-center">{{app.pid}}</td>
+        <td class="flex-box flex-center-center">
+          {{shell/ui-icon iconSize="12" iconUrl=(app-path "esh-task-manager" "img/close.svg") click=(action "terminate" app)}}
+        </td>
+      </tr>
+    {{/each}}
+  </tbody>
+</table>

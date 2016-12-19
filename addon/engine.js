@@ -9,6 +9,7 @@ const Eng = Engine.extend({
   modulePrefix,
   Resolver,
   title: "Task Manager",
+  icon: 'engines-dist/esh-task-manager/icon.svg',
   dependencies: {
     services: [
       'shell-manager',

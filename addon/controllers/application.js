@@ -8,11 +8,7 @@ export default Ember.Controller.extend({
     startApp(appName){
       const manager = this.get('manager');
 
-      this.get('manager').exec(appName, {
-        title: appName,
-        icon: '/theme/app-icons/default.svg',
-        hasStatusBar: false
-      });
+      this.get('manager').exec(appName);
 
       this.set('execAppName', '');
 
