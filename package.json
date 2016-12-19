@@ -1,6 +1,6 @@
 {
   "name": "esh-task-manager",
-  "version": "0.4.0-alpha",
+  "version": "0.4.0-alpha.1",
   "description": "Ember-shell Application. Manages application execution and lifecycles",
   "keywords": [
     "ember-addon",
