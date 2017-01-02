@@ -8,7 +8,7 @@ export default Ember.Controller.extend({
 
     terminate(app){
       const manager = this.get('manager');
-      manager.terminate(app.name);
+      manager.terminate(app.name, app.pid);
       return false;
     }
 
